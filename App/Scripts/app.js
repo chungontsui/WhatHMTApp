@@ -3,7 +3,7 @@
 /// -------------------------------------------------------------------------------------------------------------------
 /// <reference path="_references.ts" />
 // Declare app level module which depends on filters, and services
-angular.module('app', ['app.filters', 'app.services', 'app.directives', 'app.controllers'])
+angular.module('app', ['app.services', 'app.directives', 'app.controllers'])
     .config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
         $locationProvider.html5Mode(true);
         $routeProvider
