@@ -2,7 +2,7 @@
 /// Directives
 /// -------------------------------------------------------------------------------------------------------------------
 /// <reference path="_references.ts" />
-angular.module('app.directives', [])
+angular.module('app.directives', ['$parse'])
     .directive('appVersion', ['version', function (version) {
         return function (scope, elm, attrs) {
             elm.text(version);
