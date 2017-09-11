@@ -1,0 +1,53 @@
+﻿<p>This is the partial for view 1.</p>
+<div class="flex-container" ng-controller="MainCtrl" style="width: 1200px;">
+	<div class="flex-item" style="width: 65%;">
+		<div class="flex-container" id="map" style="width: auto;"></div>
+	</div>
+	<div class="flex-item" style="width: 30%;">
+		<div class="flex-container" style="width: 100%;flex-direction: row; height: auto;">
+			<div style="width: 50%; margin-right: 5px;">
+				<div class="container" ng-repeat="isrc in imgSRC1">
+					<img ng-src="{{isrc.src}}" alt="Avatar" class="image" style="/*width:120px*/">
+					<div class="middle">
+						<!--<div>
+							<img src="Like.png" ng-click="like(isrc.id)" style="display:inline-block;width:30px; height:30px" />
+							<img src="NotLike.png" ng-click="notLike(isrc.id)" style="display:inline-block;width:30px; height:30px" />
+						</div>-->
+						<img src="delete1Btn.png" ng-click="removeImg(isrc.id)" style="width:40px; height:40px" />
+					</div>
+				</div>
+			</div>
+			<div style="width: 50%; margin-right: 5px;">
+				<div class="container" ng-repeat="isrc in imgSRC2">
+					<img ng-src="{{isrc.src}}" alt="Avatar" class="image" style="/*width:120px*/">
+					<div class="middle">
+						<img src="delete1Btn.png" ng-click="removeImg(isrc.id)" style="width:40px; height:40px" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="flex-container" style="margin-top: 10px; width: auto; height:auto">
+			<button id="add-toy" ng-click="openAddToyDialog()" class="ui-button ui-widget ui-corner-all" style="width: 100%;">Add Toy</button>
+		</div>-->
+	</div>
+	<div id="dialog-form" class="modal" title="Create new user" style="height:auto">
+		<div class="modal-content">
+			<span class="close" ng-click="closeAddToyDialog()">&times;</span>
+			<form>
+				<fieldset style="border:none">
+					<label for="name">Description</label>
+					<input type="text" name="name" id="name" ng-model="addToyForm.toyName" placeholder="Name of the toy..." value="Jane Smith" class="text ui-widget-content ui-corner-all">
+					<label for="pict">Upload Picture</label>
+					<!--<input name="pict" id="pict" ng-model="addToyForm.fileData" type="file" value="Add Picture..." />-->
+					<!-- Allow form submission with keyboard without duplicating the dialog button -->
+
+					<input type="file" file-model="myFile" />
+					<button ng-click="uploadFile()">upload me</button>
+
+					<input type="submit" tabindex="-1" value="Add Toy">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+</div>
