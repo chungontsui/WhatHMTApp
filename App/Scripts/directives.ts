@@ -8,7 +8,7 @@ angular.module('app.directives', [])
         return function (scope, elm, attrs) {
             elm.text(version);
         };
-	}]).directive('fileModel', ['fileModel', function (fileModel) {
+	}]).directive('fileModelDirective', ['fileModel', function (fileModel) {
 		return {
 			restrict: 'A',
 			link: function (scope, element, attrs) {
