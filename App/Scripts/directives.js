@@ -2,12 +2,12 @@
 /// Directives
 /// -------------------------------------------------------------------------------------------------------------------
 /// <reference path="_references.ts" />
-angular.module('app.directives', ['$parse'])
+angular.module('app.directives', [])
     .directive('appVersion', ['version', function (version) {
         return function (scope, elm, attrs) {
             elm.text(version);
         };
-    }]).directive('fileModel', ['$parse', function ($parse) {
+    }]).directive('fileModel', ['', function ($parse) {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
