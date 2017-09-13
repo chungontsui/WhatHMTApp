@@ -14,6 +14,9 @@ angular.module('app.controllers', [])
 					lng: position.coords.longitude
 				}
 
+				$scope.imgSRC1 = [];
+				$scope.imgSRC2 = [];
+
 				$scope.map = new google.maps.Map(document.getElementById('map'), {
 					center: pos,
 					zoom: 12
@@ -67,14 +70,20 @@ angular.module('app.controllers', [])
 
 							/*replace the following block with a function to get actual images from backend*/
 
-							$scope.toyLists.length = 0;
+
+							//if ($scope.toyLists && $scope.toyLists instanceof Array) {
+							//	$scope.toyLists.length = 0;
+							//}
+							//else
+							//{ }
+							
 
 							var toyLists = [
-								{ id: "1", src: "toy1.jpg" },
-								{ id: "2", src: "toy2.jpg" },
-								{ id: "3", src: "toy3.jpg" },
-								{ id: "4", src: "toy4.jpg" },
-								{ id: "5", src: "toy5.jpg" }
+								{ id: "1", src: "/Images/toy1.jpg" },
+								{ id: "2", src: "/Images/toy2.jpg" },
+								{ id: "3", src: "/Images/toy3.jpg" },
+								{ id: "4", src: "/Images/toy4.jpg" },
+								{ id: "5", src: "/Images/toy5.jpg" }
 							];
 
 							toyLists.push({ id: "6", src: "Like.png" });

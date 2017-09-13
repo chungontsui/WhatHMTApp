@@ -119,7 +119,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\delete1Btn.png" />
+    <Content Include="Images\deleteBtn.png" />
+    <Content Include="Images\like.jpg" />
+    <Content Include="Images\Like.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\NotLike.png" />
+    <Content Include="Images\toy1.jpg" />
+    <Content Include="Images\toy2.jpg" />
+    <Content Include="Images\toy3.jpg" />
+    <Content Include="Images\toy4.jpg" />
+    <Content Include="Images\toy5.jpg" />
+    <Content Include="Images\toy6.jpg" />
+    <Content Include="Images\toy7.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

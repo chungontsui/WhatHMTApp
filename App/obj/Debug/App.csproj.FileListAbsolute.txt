@@ -96,6 +96,5 @@ C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\bin\System.Web.WebPages.xml
 C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\bin\System.Web.WebPages.Deployment.xml
 C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\bin\System.Web.WebPages.Razor.xml
 C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\obj\Debug\App.csproj.App.config
-C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\obj\Debug\App.csprojResolveAssemblyReference.cache
 C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\obj\Debug\App.dll
 C:\Users\chung.tsui\Source\Repos\WhatHMTApp\App\obj\Debug\App.pdb

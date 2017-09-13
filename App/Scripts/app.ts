@@ -8,7 +8,7 @@ angular.module('app', ['app.services', 'app.directives', 'app.controllers'])
     .config([<any> '$locationProvider', '$routeProvider', function ($locationProvider: any, $routeProvider: any) {
         $locationProvider.html5Mode(true);
         $routeProvider
-            .when('/view1', { templateUrl: 'views/view1', controller: 'FirstCtrl' })
+			.when('/view1', { templateUrl: 'views/view1', controller: 'MainCtrl' })
             .when('/view2', { templateUrl: 'views/view2', controller: 'SecondCtrl' })
             .otherwise({ redirectTo: '/view1' });
     }]);
