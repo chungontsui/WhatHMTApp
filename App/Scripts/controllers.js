@@ -70,7 +70,7 @@ angular.module('app.controllers', [])
                                 { id: "4", src: "/Images/toy4.jpg" },
                                 { id: "5", src: "/Images/toy5.jpg" }
                             ];
-                            toyLists.push({ id: "6", src: "Like.png" });
+                            toyLists.push({ id: "6", src: "/Images/Like.png" });
                             $scope.$apply(function () {
                                 $scope.imgSRC1.length = 0;
                                 $scope.imgSRC2.length = 0;
