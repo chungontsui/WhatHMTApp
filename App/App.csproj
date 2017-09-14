@@ -1251,6 +1251,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\StoreToysController.cs" />
     <Compile Include="Api\ValuesController.cs" />
     <Compile Include="Core\HttpContextExtensions.cs" />
     <Compile Include="Core\Routing\RouteCollectionExtension.cs" />
@@ -1291,7 +1292,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WhatHMT.DA\WhatHMT.DA.csproj">
+      <Project>{11e260ce-e98d-481a-bbf1-7afb5a8fd335}</Project>
+      <Name>WhatHMT.DA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
