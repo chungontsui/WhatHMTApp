@@ -79,11 +79,11 @@ angular.module('app.controllers', [])
 							
 
 							var toyLists = [
-								{ id: "1", src: "/Images/toy1.jpg" },
-								{ id: "2", src: "/Images/toy2.jpg" },
-								{ id: "3", src: "/Images/toy3.jpg" },
-								{ id: "4", src: "/Images/toy4.jpg" },
-								{ id: "5", src: "/Images/toy5.jpg" }
+								{ id: "1", src: "/Images/toy1.jpg" }
+								,{ id: "2", src: "/Images/toy2.jpg" }
+								,{ id: "3", src: "/Images/toy3.jpg" }
+								,{ id: "4", src: "/Images/toy4.jpg" }
+								,{ id: "5", src: "/Images/toy5.jpg" }
 							];
 
 							toyLists.push({ id: "6", src: "/Images/Like.png" });
