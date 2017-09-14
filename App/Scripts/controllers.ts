@@ -86,6 +86,8 @@ angular.module('app.controllers', [])
 								,{ id: "5", src: "/Images/toy5.jpg" }
 							];
 
+							$scope.addNewBtnIndex = 6; //last id + 1
+
 							toyLists.push({ id: "6", src: "/Images/Like.png" });
 
 							$scope.$apply(function () {
@@ -106,6 +108,20 @@ angular.module('app.controllers', [])
 						});
 					});
 				};
+
+				$scope.clickAction = function (id)
+				{
+					if (id != $scope.addNewBtnIndex) {
+						//remove
+						//Confirm if they do want to remove it
+					}
+					else
+					{
+						//add New
+						$scope.openAddToyDialog();
+					}
+				}
+
 			});
 		}
     }])

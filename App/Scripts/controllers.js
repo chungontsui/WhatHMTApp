@@ -70,6 +70,7 @@ angular.module('app.controllers', [])
                                 { id: "4", src: "/Images/toy4.jpg" },
                                 { id: "5", src: "/Images/toy5.jpg" }
                             ];
+                            $scope.addNewBtnIndex = 6; //last id + 1
                             toyLists.push({ id: "6", src: "/Images/Like.png" });
                             $scope.$apply(function () {
                                 $scope.imgSRC1.length = 0;
@@ -86,6 +87,15 @@ angular.module('app.controllers', [])
                             /**/
                         });
                     });
+                };
+                $scope.clickAction = function (id) {
+                    if (id != $scope.addNewBtnIndex) {
+                        //remove
+                        //Confirm if they do want to remove it
+                    }
+                    else {
+                        //add New
+                    }
                 };
             });
         }
